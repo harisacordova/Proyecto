@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>ID: {{ producto.id }}, Nombre: {{ producto.nombre }}, Precio: {{ producto.precio.calcular_precio_final() }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Volver</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Aplicación de Productos</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Producto</h1>
+        <form action="/agregar_producto" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion"><br>
+            
+            <label for="monto">Monto:</label>
+            <input type="text" id="monto" name="monto"><br>
+            
+            <label for="moneda">Moneda:</label>
+            <input type="text" id="moneda" name="moneda"><br>
+            
+            <label for="descuento">Descuento:</label>
+            <input type="text" id="descuento" name="descuento"><br>
+            
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion"><br>
+            
+            <label for="capacidad">Capacidad:</label>
+            <input type="text" id="capacidad" name="capacidad"><br>
+            
+            <label for="proveedor_nombre">Nombre del Proveedor:</label>
+            <input type="text" id="proveedor_nombre" name="proveedor_nombre"><br>
+            
+            <label for="proveedor_contacto">Contacto del Proveedor:</label>
+            <input type="text" id="proveedor_contacto" name="proveedor_contacto"><br>
+            
+            <input type="submit" value="Agregar Producto">
+        </form>
+        <br>
+        <a href="/mostrar_productos">Mostrar Productos</a>
+    </div>
+</body>
+</html>
